@@ -1,2 +1,2 @@
 # Platform
-The main Team Programming platform
+This is the main team programming platform.

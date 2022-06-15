@@ -1,11 +1,17 @@
-# Getting Started with Create React App
+# Running the project in your machine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone the project in your local.
+cd to front-end/platform
 
-## Available Scripts
+Open terminal and enter:
+### `npm install`
 
-In the project directory, you can run:
+Eg:- I:\Projects\front-end\platform npm install
 
+Running this command will install all the node_modules 
+required for the Project.(These are listed as dependencies in package.json)
+
+Then:
 ### `npm start`
 
 Runs the app in the development mode.\

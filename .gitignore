@@ -6,8 +6,8 @@ Scripts/
 Lib/
 media
 
-# FRONT-END: REACT #
-node_modules/
+# FRONTEND: REACT #
+*/node_modules/
 /build
 /coverage
 /.pnp

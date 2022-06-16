@@ -1,15 +1,19 @@
 # Running the project in your machine
 
 Clone the project in your local.
-cd to front-end/platform
+cd to Plartform/frontend
+
+>Before starting it might be a good idea to install ```nvm``` (a [Node Version Manager](https://github.com/nvm-sh/nvm)) and then use it to install ```npm```.
 
 Open terminal and enter:
 ### `npm install`
 
-Eg:- I:\Projects\front-end\platform npm install
+Eg:- I:\Projects\frontend npm install
 
 Running this command will install all the node_modules 
-required for the Project.(These are listed as dependencies in package.json)
+required for the Project. (These are listed as dependencies in package.json)  
+>In case of **ENOSPC Error** (on a Linux machine) you might need to increase the number of programs that inotify can monitor: 
+```echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p```
 
 Then:
 ### `npm start`

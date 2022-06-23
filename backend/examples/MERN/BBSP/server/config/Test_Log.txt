@@ -1,0 +1,20 @@
+mongo
+show dbs
+curl http://localhost:8001/api/allUsers
+curl -d "First_Name=Tommy&Last_Name=Bahama&Email_Address=tbha@gmail.com" -X POST http://localhost:8000/api/user/new
+
+# Insert into db
+db.members.insertOne({First_Name: "Tommy",Last_Name: "Bahama",Email_Address: "tbha@gmail.com",Position:"Goofball",Access_Level: 1})
+db.members.insertOne({First_Name: "Barb",Last_Name: "Razzo",Email_Address: "brazzo@bbsp.com",Position:"Base Patroller",Access_Level: 2})
+db.members.insertOne({First_Name: "PB",Last_Name: "J",Email_Address: "pbj@bbsp.com",Position:"Director",Access_Level: 1})
+curl http://localhost:8001/api/allUsers
+
+# db Admin User
+	db.createUser( { user: "accountAdmin01",
+                 pwd: passwordPrompt(),  // Or  "<cleartext password>"
+                 customData: { employeeId: 12345 },
+                 roles: [ { role: "clusterAdmin", db: "admin" },
+                          { role: "readAnyDatabase", db: "admin" },
+                          "readWrite"] },
+               { w: "majority" , wtimeout: 5000 } )
+accountAdmin01, 12345

@@ -1,0 +1,24 @@
+# BACKEND: DJANGO #
+*.pyc
+__pycache__
+db.sqlite3
+Scripts/
+Lib/
+media
+
+# FRONTEND: REACT #
+*/node_modules/
+/build
+/coverage
+/.pnp
+.pnp.js
+
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
